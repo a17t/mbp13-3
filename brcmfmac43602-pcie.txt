@@ -24,7 +24,7 @@ regrev=15
 #   BFL_NOCBUCK	          = 0x00800000
 # X BFL_PALDO              = 0x02000000   Power topology uses PALDO ? - CHECK
 #   BFL_EXTLNA_5GHz        = 0x10000000   Board has an external LNA in 5GHz band
-boardflags=0x00000001
+boardflags=0x00400001
 #boardflags=0x10401001
 
 
@@ -101,10 +101,11 @@ temps_hysteresis=15
 
 # RFSWCTRL 2G and 5G iLNA
 #            WL_TX,     WL_RX,     WL_RX_ATTN, BT_TX_RX, WL_MASK
-swctrlmap_2g=0xFFFFFFFF,0xFFFFFFF1,0xF0F0F0F0,0x0F0F0F0F,0xF0F0F0F0
+#swctrlmap_2g=0x00000808,0x30300000,0x10100000,0x023010,0x1f8								
 swctrlmap_5g=0xFFFFFFFF,0xFFFFFFF1,0xFFFFFFFF,0xFFFFFFFF,0xF0F0F0F0
+#swctrlmap_2g=0x44844484,0x42824282,0x40804484,0x818282,0x1ff
+#swctrlmap_5g=0x50905090,0x68a868a8,0x60a060a0,0x818282,0x2f8
 
-swctrlmapext_2g=0x00000000,0x00000000,0x00000000,0x000000,0x003
-swctrlmapext_5g=0x00000000,0x00000000,0x00000000,0x000000,0x003
+##not needed##swctrlmapext_2g=0x00000000,0x00000000,0x00000000,0x000000,0x003
+##not needed###swctrlmapext_5g=0x00000000,0x00000000,0x00000000,0x000000,0x003
 ########################################################
-
